@@ -39,7 +39,7 @@ export default function ThankYouPage() {
         <div className="wrap wrap--narrow">
           <h2>Comment vous préparer</h2>
           <p className="prep-subtitle">
-            Pour qu&apos;on puisse vous aider au maximum en 15 minutes
+            Pour qu&apos;on puisse vous aider au maximum en 30 minutes
           </p>
           <ol className="prep-steps">
             <li>
@@ -69,7 +69,7 @@ export default function ThankYouPage() {
               <div>
                 <strong>Un endroit calme</strong>
                 <p>
-                  La consultation dure 15 minutes. Assurez-vous d&apos;être
+                  La consultation dure 30 minutes. Assurez-vous d&apos;être
                   disponible sans interruptions.
                 </p>
               </div>

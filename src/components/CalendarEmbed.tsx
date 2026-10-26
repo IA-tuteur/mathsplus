@@ -35,7 +35,7 @@ export function CalendarEmbed() {
             <p>Seulement 5 places par semaine. Choisissez votre créneau.</p>
             <div className="calendar-trust">
               <span>
-                <span className="calendar-dot" /> 15 min
+                <span className="calendar-dot" /> 30 min
               </span>
               <span>
                 <span className="calendar-dot" /> Gratuit
