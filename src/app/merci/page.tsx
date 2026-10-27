@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { client } from "@/config/client";
+import { MetaPixel } from "@/components/MetaPixel";
 
 export const metadata: Metadata = {
   title: `Consultation confirmée | ${client.name}`,
@@ -10,6 +11,7 @@ export const metadata: Metadata = {
 export default function ThankYouPage() {
   return (
     <main>
+      <MetaPixel />
       <section className="ty-hero">
         <div className="wrap wrap--narrow">
           <div className="ty-check">
