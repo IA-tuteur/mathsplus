@@ -12,7 +12,7 @@ export const client = {
   },
 
   vsl: {
-    embedUrl: "https://www.youtube.com/embed/mkCJNvSpSDc",
+    embedUrl: "https://www.youtube.com/embed/28nSrt4X5UY",
   },
 
   guarantee:
