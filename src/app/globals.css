@@ -68,7 +68,8 @@ body > * { position: relative; z-index: 1; }
 .top-bar a:hover { opacity: .85; }
 body:has(.ty-hero) .top-bar,
 body:has(.precall) .top-bar,
-body:has(.faq-page) .top-bar { display: none; }
+body:has(.faq-page) .top-bar,
+body:has(.rdv-page) .top-bar { display: none; }
 
 /* ===== Typography ===== */
 h1, h2, h3 {
@@ -648,6 +649,29 @@ section {
 .booking-main {
   flex: 1;
   padding: clamp(28px, 4vw, 48px) 0;
+}
+
+/* ===== Standalone booking ===== */
+.rdv-page {
+  padding: clamp(40px, 7vw, 80px) 0 clamp(48px, 8vw, 88px);
+  text-align: center;
+  background: var(--surface);
+}
+.rdv-page h1 {
+  font-size: clamp(28px, 4.2vw, 42px);
+  max-width: 16em;
+  margin: 0 auto .3em;
+}
+.rdv-page__sub {
+  color: var(--muted);
+  font-size: clamp(15px, 1.4vw, 17px);
+  margin: 0 auto clamp(28px, 4vw, 40px);
+}
+.rdv-calendar {
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 0;
+  min-height: 640px;
 }
 
 /* ===== Thank you page ===== */

@@ -5,9 +5,13 @@ import { client } from "@/config/client";
 
 export function Footer() {
   const path = usePathname();
-  const onFaq = path === "/faq" || path.startsWith("/faq/");
-  const name = onFaq ? "MathPlus" : client.name;
-  const detail = onFaq
+  const mathPlus =
+    path === "/faq" ||
+    path.startsWith("/faq/") ||
+    path === "/rendez-vous" ||
+    path.startsWith("/rendez-vous/");
+  const name = mathPlus ? "MathPlus" : client.name;
+  const detail = mathPlus
     ? `Enrichissement STEM · ${client.location}`
     : `${client.tagline} · ${client.location}`;
 
