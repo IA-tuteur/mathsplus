@@ -67,7 +67,8 @@ body > * { position: relative; z-index: 1; }
 }
 .top-bar a:hover { opacity: .85; }
 body:has(.ty-hero) .top-bar,
-body:has(.precall) .top-bar { display: none; }
+body:has(.precall) .top-bar,
+body:has(.faq-page) .top-bar { display: none; }
 
 /* ===== Typography ===== */
 h1, h2, h3 {
@@ -1031,6 +1032,111 @@ section {
 @media (min-width: 780px) {
   .testimonials__grid { grid-template-columns: 1fr 1fr; }
 }
+.precall-faq-link {
+  margin: 28px 0 0;
+  font-size: 15px;
+}
+.precall-faq-link a {
+  color: var(--accent);
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+/* ===== FAQ page ===== */
+.faq-hero {
+  padding: clamp(36px, 6vw, 72px) 0 clamp(12px, 2vw, 20px);
+  text-align: center;
+  background: var(--surface);
+}
+.faq-hero h1 {
+  font-size: clamp(32px, 5vw, 48px);
+  max-width: 14em;
+  margin: 0 auto .35em;
+}
+.faq-hero__sub {
+  color: var(--muted);
+  font-size: clamp(16px, 1.4vw, 18px);
+  margin: 0 auto;
+  max-width: 36ch;
+}
+.faq-videos {
+  padding: clamp(36px, 5vw, 64px) 0;
+  text-align: center;
+  background: var(--ground);
+}
+.faq-videos h2,
+.faq-written h2,
+.faq-cta h2 {
+  font-size: clamp(24px, 3vw, 32px);
+  margin: 0 auto .8em;
+}
+.faq-written {
+  padding: clamp(40px, 6vw, 80px) 0;
+  text-align: center;
+  background: var(--surface);
+}
+.faq-list {
+  max-width: 640px;
+  margin: 0 auto;
+  text-align: left;
+  border-top: 1px solid var(--line);
+}
+.faq-item {
+  border-bottom: 1px solid var(--line);
+}
+.faq-item summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 16px;
+  padding: 18px 0;
+  cursor: pointer;
+  font-family: var(--serif);
+  font-size: clamp(17px, 1.6vw, 20px);
+  font-weight: 600;
+  line-height: 1.35;
+  color: var(--ink);
+  list-style: none;
+}
+.faq-item summary::-webkit-details-marker { display: none; }
+.faq-item summary::after {
+  content: "+";
+  flex: none;
+  color: var(--accent);
+  font-family: var(--sans);
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 1;
+}
+.faq-item[open] summary::after { content: "–"; }
+.faq-item p {
+  margin: 0 0 18px;
+  max-width: 58ch;
+  color: var(--muted);
+  font-size: 16px;
+  line-height: 1.55;
+}
+.faq-cta {
+  padding: clamp(48px, 7vw, 88px) 0;
+  text-align: center;
+  background: var(--ground);
+}
+.faq-cta p {
+  color: var(--muted);
+  margin: 0 auto 24px;
+}
+.faq-more {
+  margin: 18px 0 0;
+  font-size: 15px;
+}
+.faq-more a {
+  color: var(--accent);
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
 .precall .testimonial-card__author {
   margin: 12px 0 0;
   text-align: left;

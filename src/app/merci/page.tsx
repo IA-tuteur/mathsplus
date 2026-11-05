@@ -87,6 +87,9 @@ export default function ThankYouPage() {
             Si vous avez besoin de modifier votre créneau, utilisez le lien
             dans votre courriel de confirmation.
           </p>
+          <p className="faq-more">
+            <a href="/faq">Vous avez d&apos;autres questions? Voyez la FAQ.</a>
+          </p>
         </div>
       </section>
     </main>

@@ -137,6 +137,9 @@ export default function AvantVotreAppelPage() {
               </article>
             ))}
           </div>
+          <p className="precall-faq-link">
+            <a href="/faq">Les réponses écrites sont ici.</a>
+          </p>
         </div>
       </section>
 
